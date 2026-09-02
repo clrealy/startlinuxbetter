@@ -19,7 +19,7 @@ sudo apt install -y \
 sudo apt install -y flatpak
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-# 3. Install Flatpak gaming apps (fixed Flathub ID for ProtonUp-Qt)
+# 3. Install Flatpak gaming apps (fixed IDs for ProtonUp-Qt and Bottles)
 echo "Installing Flatpaks..."
 flatpak install -y flathub \
     com.valvesoftware.Steam \
@@ -27,7 +27,7 @@ flatpak install -y flathub \
     com.heroicgameslauncher.hgl \
     net.davidotek.pupgui2 \
     org.freedesktop.Platform.VulkanLayer.MangoHud \
-    io.github.bottlesdev.bottles
+    com.usebottles.bottles
 
 # 4. Create confirmation file in user home directory
 cat <<'EOF' > "$HOME/gaming_ready.txt"
