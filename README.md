@@ -2,21 +2,12 @@
 # Go sub and follow clearly124
 # I'm focusing on mint and ubuntu rn
 # I'm making stuff for gaming, debloat, and more!
-# Anyways this is the README
+# How to execute a script
+cd ~/ Downloads (Or wherever the file is)
 
+chmod +x filename.sh
 
+sudo ./filename.sh
 
-
-# How to debloat (Ubuntu)
-
-cd ~/WhereverTheFileIs
-chmod +x debloatu.sh
-sudo ./debloatu.sh
-
-# How to debloat (Mint)
-
-cd ~/WhereverTheFileIs
-chmod +x debloatm.sh
-sudo ./debloatm.sh
-
+fuck canonical
 fuck libreoffice
