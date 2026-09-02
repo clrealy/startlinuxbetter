@@ -18,13 +18,13 @@ sudo apt install -y \
 sudo apt install -y flatpak
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-# 3. Install Flatpak gaming apps
+# 3. Install Flatpak gaming apps (fixed ID for ProtonUp-Qt)
 echo "Installing Flatpaks..."
 flatpak install -y flathub \
     com.valvesoftware.Steam \
     net.lutris.Lutris \
     com.heroicgameslauncher.hgl \
-    net.davidhii.ProtonUp-Qt \
+    net.davidhi.ProtonUp-Qt \
     org.freedesktop.Platform.VulkanLayer.MangoHud \
     io.github.bottlesdev.bottles
 
