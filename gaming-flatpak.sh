@@ -3,7 +3,8 @@ set -e
 
 echo "Setting up AMD GPU drivers & Flatpak gaming environment..."
 
-# 1. Install AMD GPU Mesa Drivers & Vulkan libraries
+# 1. Enable 32-bit architecture & install AMD GPU Mesa Drivers + Vulkan
+sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install -y \
     mesa-vulkan-drivers \
@@ -18,13 +19,13 @@ sudo apt install -y \
 sudo apt install -y flatpak
 sudo flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-# 3. Install Flatpak gaming apps (fixed ID for ProtonUp-Qt)
+# 3. Install Flatpak gaming apps (fixed Flathub ID for ProtonUp-Qt)
 echo "Installing Flatpaks..."
 flatpak install -y flathub \
     com.valvesoftware.Steam \
     net.lutris.Lutris \
     com.heroicgameslauncher.hgl \
-    net.davidhi.ProtonUp-Qt \
+    net.davidotek.pupgui2 \
     org.freedesktop.Platform.VulkanLayer.MangoHud \
     io.github.bottlesdev.bottles
 
